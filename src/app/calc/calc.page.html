@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>CALCULADORA CIENTIFICA</ion-title>
+    <ion-buttons slot="end">
+      <ion-button fill="clear" size="small"style="text-transform:none"(click)="OnClickSair()">Sair</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+
+      <div class="result">
+        <ion-input type="number" [(ngModel)]="display" class="ion-text-end"></ion-input>
+      </div>
+
+
+      <div class="buttons">
+        <ion-button class="button resetBtn" style="text-transform:none"(click)="onClickRoot()">√x</ion-button>
+        <ion-button class="button resetBtn" style="text-transform:none"(click)="onClickExp()">x^n</ion-button>
+        <ion-button class="button resetBtn" style="text-transform:none"(click)="onClickFact()">x!</ion-button>
+        <ion-button class="button operator" (click)="onClickC()">C</ion-button>
+
+        <ion-button class="button trig" style="text-transform:none"(click)="onClickSin()">sin</ion-button>
+        <ion-button class="button trig" style="text-transform:none"(click)="onClickCos()">cos</ion-button>
+        <ion-button class="button trig" style="text-transform:none"(click)="onClickTan()">tan</ion-button>
+
+        <ion-button class="button operator"(click)="onClickBy()">/</ion-button>
+        <ion-button class="button number"(click)="onClickSeven()">7</ion-button>
+        <ion-button class="button number"(click)="onClickEight()">8</ion-button>
+        <ion-button class="button number"(click)="onClickNine()">9</ion-button>
+        <ion-button class="button operator"(click)="onClickTimes()">*</ion-button>
+        <ion-button class="button number"(click)="onClickFour()">4</ion-button>
+        <ion-button class="button number"(click)="onClickFive()">5</ion-button>
+        <ion-button class="button number"(click)="onClickSix()">6</ion-button>
+        <ion-button class="button operator"(click)="onClickMinus()">-</ion-button>
+        <ion-button class="button number"(click)="onClickOne()">1</ion-button>
+        <ion-button class="button number"(click)="onClickTwo()">2</ion-button>
+        <ion-button class="button number"(click)="onClickThree()">3</ion-button>
+        <ion-button class="button operator"(click)="onClickPlus()">+</ion-button>
+        <ion-button class="button number zero-btn" (click)="onClickZero()">0</ion-button>
+        <ion-button class="button equal"(click)="onClickEqual()">=</ion-button>
+
+
+      </div>  
+
+  </div>
+</ion-content>

@@ -1,0 +1,38 @@
+<ion-content>
+  <form [formGroup]="loginForm">
+    <div class="contaier-login">
+      <ion-item class="ion-padding-vertical">
+        <ion-input
+          formControlName="login"
+          label="Login"
+          label-placement="floating"
+          fill="solid"
+          placeholder="Digite o login"
+        ></ion-input>
+      </ion-item>
+  
+      <ion-item class="ion-padding-bottom">
+        <ion-input
+          formControlName="password"
+          label="Senha"
+          label-placement="floating"
+          fill="solid"
+          placeholder="Digite a senha"
+          type="password"
+        ></ion-input>
+      </ion-item>
+  
+      <ion-row class="ion-justify-content-center ion-padding-vertical">
+        <ion-button
+          class="buttonSignin"
+          color="secondary"
+          (click)="onClickLogin()"
+        >
+          Entrar
+        </ion-button>
+      </ion-row>
+    </div>
+
+  </form>
+
+</ion-content>
